@@ -1,0 +1,250 @@
+.hotel
+  padding: 23px 0 70px
+
+  &-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 20px
+
+    &__name
+      margin-top: 4px
+      margin-bottom: 0
+
+    &__offer
+      display: block
+      width: 70px
+      height: 20px
+      margin-left: 14px
+      margin-top: 4px
+
+    &__description
+      margin: 0
+
+    &__carryover
+      white-space: nowrap
+
+    &__rating
+      width: 65px
+      height: 45px
+
+  &-name
+    font-size: 24px
+    line-height: 30px
+    text-transform: uppercase
+
+  &-wrappep
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+  &-description
+    font-size: 12px
+    line-height: 15px
+
+  &-grid
+    display: flex
+    justify-content: space-between
+
+  &-coordinates
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &-slider
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 8px
+    overflow: hidden
+    position: relative
+    width: 728px
+    height: 450px
+
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer
+      background-color: transparent
+
+      &--next
+        right: 18px
+        background-image: url(../image/arrow-next.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+
+        &:hover
+          background-image: url(../image/arrow-hover.svg)
+        &:focus
+          outline: none
+
+      &--prev
+        left: 18px
+        background-image: url(../image/arrow-prev.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+
+        &:hover
+          background-image: url(../image/arrow-hover.svg)
+          transform-origin: 50% 25% 0
+          transform: rotate(180deg)
+        &:focus
+          outline: none
+
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+    &__item
+
+      &:after
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        z-index: 10
+
+.stars
+  flex-basis: 100%
+
+.offer
+  font-size: 10px
+  line-height: 13px
+  padding: 4px 9px
+  background-color: $primary
+  border-radius: 3px
+  color: $light
+
+.rating
+  max-width: 65px
+  max-height: 45px
+  text-align: center
+  color: $light
+  background-color: $primary
+  border-radius: 4px
+
+  &__text
+    font-size: 8px
+    line-height: 10px
+
+  &__counter
+    font-size: 14px
+    line-height: 18px
+
+  &__five
+    font-size: 10px
+
+.booking
+  color: $light
+  background-color: $dark
+  border-radius: 8px
+  width: 350px
+  height: 210px
+  padding: 28px
+
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+
+  &__price
+    display: flex
+    flex-direction: column
+
+  &__start
+    font-family: Nunito
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+
+  &__pricetag
+    font-family: Nunito
+    font-style: normal
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+
+  &__per-room
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+
+  &__room
+    margin-top: 4px
+
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+
+  &__description
+    margin-left: 9px
+
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+
+  &__heading
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+
+  &__num
+    margin-left: 8px
+
+.button
+  width: 100%
+  min-height: 45px
+  background-color: $primary
+  color: $light
+  border: none
+  border-radius: 4px
+  font-family: Nunito
+  font-style: normal
+  font-weight: 600
+  font-size: 14px
+  line-height: 19px
+  cursor: pointer
+
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
+  overflow: hidden
